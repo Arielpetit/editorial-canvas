@@ -40,7 +40,7 @@ const Sidebar = ({ tableOfContents }: SidebarProps) => {
         <nav>
           <ul>
             {tableOfContents.map((item) => (
-              <li key={item.id} className={`ml-${(item.level - 2) * 4}`}>
+              <li key={item.id} style={{ marginLeft: `${(item.level - 2) * 1}rem` }}>
                 <a
                   href={`#${item.id}`}
                   className={`block text-sm transition-colors py-1 ${

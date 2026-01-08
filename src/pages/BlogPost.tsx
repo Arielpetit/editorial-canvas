@@ -29,7 +29,7 @@ const BlogPost = () => {
         
         // Extract headings for table of contents
         const content = foundPost.content;
-        const headingRegex = /^(##|###)\s+(.+)$/gm;
+        const headingRegex = /^(##|###|####)\s+(.+)$/gm;
         const headings: { id: string; text: string; level: number }[] = [];
         let match;
         while ((match = headingRegex.exec(content)) !== null) {
@@ -135,6 +135,23 @@ const BlogPost = () => {
             {/* Share buttons */}
             <aside className="hidden lg:block w-64 flex-shrink-0">
               <div className="sticky top-24">
+                <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
+                  {t.tableOfContents}
+                </h4>
+                <nav>
+                  <ul>
+                    {tableOfContents.map((item) => (
+                      <li key={item.id} className={`ml-${(item.level - 2) * 4}`}>
+                        <a
+                          href={`#${item.id}`}
+                          className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1"
+                        >
+                          {item.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
                 <div className="mt-8 pt-8 border-t border-border">
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
                     {t.sharePost}

@@ -32,11 +32,14 @@ Passwordless authentication eliminates the password from the login process altog
 
 The most prominent standard leading this charge is **FIDO2**, which combines the WebAuthn protocol and the Client to Authenticator Protocol (CTAP). Here’s how it typically works:
 
-1.  **Registration:** When you create an account, your device (like a smartphone or laptop) generates a unique pair of cryptographic keys: a private key that is stored securely on your device, and a public key that is sent to the service’s server.
-2.  **Authentication:** To log in, the service sends a challenge to your device. You then approve the login using a simple, secure action:
-    *   **Biometrics:** A fingerprint scan or facial recognition (like Face ID or Windows Hello).
-    *   **PIN:** A local PIN that never leaves your device.
-    *   **Security Key:** A physical hardware key (like a YubiKey) that you tap or insert.
+#### Registration
+When you create an account, your device (like a smartphone or laptop) generates a unique pair of cryptographic keys: a private key that is stored securely on your device, and a public key that is sent to the service’s server.
+
+#### Authentication
+To log in, the service sends a challenge to your device. You then approve the login using a simple, secure action:
+*   **Biometrics:** A fingerprint scan or facial recognition (like Face ID or Windows Hello).
+*   **PIN:** A local PIN that never leaves your device.
+*   **Security Key:** A physical hardware key (like a YubiKey) that you tap or insert.
 
 Once you authenticate locally, your device uses the private key to sign the challenge and sends it back to the server. The server verifies the signature with your public key, and you’re in. Your private key never leaves your device, and there is no shared secret (like a password) that can be stolen from a server.
 
