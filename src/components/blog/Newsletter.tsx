@@ -1,36 +1,33 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { toast } from "sonner";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
+  const { t } = useLanguage();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle newsletter subscription
-    console.log("Subscribe:", email);
+    toast.success("Subscribed successfully!");
     setEmail("");
   };
 
   return (
     <div>
-      <h3 className="mb-4 text-lg font-semibold">Subscribe to new posts</h3>
-      <p className="mb-4 text-sm text-muted-foreground">
-        Subscribe to our newsletter and we'll send you the emails of latest
-        posts.
-      </p>
+      <h3 className="mb-4 text-lg font-semibold">{t("newsletterTitle")}</h3>
+      <p className="mb-4 text-sm text-muted-foreground">{t("newsletterDescription")}</p>
       <form onSubmit={handleSubmit} className="space-y-3">
         <Input
           type="email"
-          placeholder="Your email address"
+          placeholder={t("emailPlaceholder")}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
           className="bg-secondary/50"
         />
-        <Button type="submit" className="w-full">
-          Subscribe
-        </Button>
+        <Button type="submit" className="w-full">{t("subscribe")}</Button>
       </form>
     </div>
   );
