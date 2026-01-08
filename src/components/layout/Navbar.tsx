@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SearchModal from "@/components/search/SearchModal";
+import Logo from "@/components/Logo";
 
 interface NavbarProps {
   isDark: boolean;
@@ -26,8 +27,9 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
         <nav className="container mx-auto flex h-16 items-center justify-between px-4">
           {/* Logo */}
-          <Link to="/" className="text-xl font-bold tracking-tight">
-            My Blog
+          <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
+            <Logo />
+            <span>Tech Forward</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -5,6 +5,7 @@ date: "2024-07-22"
 author: "Alex Chen"
 cover: "/src/assets/passwordless.jpeg"
 tags: ["security", "tech", "future"]
+featured: true
 ---
 
 ## Introduction

@@ -2,7 +2,7 @@ import BlogCard from "./BlogCard";
 import { blogPosts } from "@/lib/blogData";
 
 const FeaturedPosts = () => {
-  const featuredPosts = blogPosts.slice(0, 4);
+  const featuredPosts = blogPosts.filter((post) => post.featured);
 
   return (
     <section className="py-12 md:py-16">

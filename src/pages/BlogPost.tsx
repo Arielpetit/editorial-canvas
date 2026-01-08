@@ -19,6 +19,7 @@ const BlogPost = () => {
   const [post, setPost] = useState<BlogPostType | null>(null);
   const [relatedPosts, setRelatedPosts] = useState<BlogPostType[]>([]);
   const [tableOfContents, setTableOfContents] = useState<{ id: string; text: string; level: number }[]>([]);
+  const [secondaryTableOfContents, setSecondaryTableOfContents] = useState<{ id: string; text: string; level: number }[]>([]);
 
   useEffect(() => {
     if (id) {
@@ -39,6 +40,7 @@ const BlogPost = () => {
           headings.push({ id, text, level });
         }
         setTableOfContents(headings);
+        setSecondaryTableOfContents(headings.filter(h => h.level === 2));
       } else {
         navigate("/");
       }
@@ -140,8 +142,8 @@ const BlogPost = () => {
                 </h4>
                 <nav>
                   <ul>
-                    {tableOfContents.map((item) => (
-                      <li key={item.id} className={`ml-${(item.level - 2) * 4}`}>
+                    {secondaryTableOfContents.map((item) => (
+                      <li key={item.id}>
                         <a
                           href={`#${item.id}`}
                           className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1"

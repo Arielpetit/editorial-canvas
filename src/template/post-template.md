@@ -4,6 +4,7 @@ date: "YYYY-MM-DD"
 author: "Author Name"
 image: "/path/to/image.jpg"
 tags: ["tag1", "tag2"]
+featured: false
 ---
 
 ## Introduction

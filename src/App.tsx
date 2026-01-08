@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import BlogPost from "./pages/BlogPost";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
+import TagPage from "./pages/TagPage";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/post/:id" element={<BlogPost />} />
+              <Route path="/tags/:tag" element={<TagPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Route>

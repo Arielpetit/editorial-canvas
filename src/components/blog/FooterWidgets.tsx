@@ -1,6 +1,6 @@
 import RecentPosts from "./RecentPosts";
-import Gallery from "./Gallery";
 import Newsletter from "./Newsletter";
+import TagCloud from "./TagCloud";
 
 const FooterWidgets = () => {
   return (
@@ -11,7 +11,7 @@ const FooterWidgets = () => {
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           <RecentPosts />
-          <Gallery />
+          <TagCloud />
           <Newsletter />
         </div>
 

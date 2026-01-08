@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
-import blogFamily from "@/assets/blog-family.jpg";
-import blogHobby from "@/assets/blog-hobby.jpg";
-import blogInterior from "@/assets/blog-interior.jpg";
-import blogKitchen from "@/assets/blog-kitchen.jpg";
-import blogGarden from "@/assets/blog-garden.jpg";
-import blogAutumn from "@/assets/blog-autumn.jpg";
+import blogAI from "@/assets/ai.jpg";
+import blogQuantum from "@/assets/quantum.jpg";
+import blogWebDev from "@/assets/future.png";
+import blogBlockchain from "@/assets/blockchain.jpg";
+import blogIoT from "@/assets/IoT-internet-of-things.jpg";
+import blogSecurity from "@/assets/cybersercurity.jpeg";
 
 const topics = [
-  { name: "Family", image: blogFamily, slug: "family" },
-  { name: "Hobby", image: blogHobby, slug: "hobby" },
-  { name: "Interior", image: blogInterior, slug: "interior" },
-  { name: "Kitchen", image: blogKitchen, slug: "kitchen" },
-  { name: "Learn", image: blogGarden, slug: "learn" },
-  { name: "Lifestyle", image: blogAutumn, slug: "lifestyle" },
+  { name: "AI", image: blogAI, slug: "ai" },
+  { name: "Quantum", image: blogQuantum, slug: "quantum-computing" },
+  { name: "Web Dev", image: blogWebDev, slug: "web-development" },
+  { name: "Blockchain", image: blogBlockchain, slug: "blockchain" },
+  { name: "IoT", image: blogIoT, slug: "iot" },
+  { name: "Security", image: blogSecurity, slug: "cybersecurity" },
 ];
 
 const PopularTopics = () => {

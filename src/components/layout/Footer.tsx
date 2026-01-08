@@ -55,8 +55,7 @@ const Footer = () => {
             <Link to="/" className="text-foreground hover:text-primary">
               My Blog
             </Link>
-            . All Rights Reserved. Published with{" "}
-            <span className="text-primary">Lovable</span>.
+            . All Rights Reserved.
           </p>
         </div>
 

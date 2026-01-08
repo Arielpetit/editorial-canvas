@@ -6,7 +6,7 @@ import { blogPosts } from "@/lib/blogData";
 
 const PreviousPosts = () => {
   const { t, language } = useLanguage();
-  const previousPosts = blogPosts.slice(4, 7);
+  const previousPosts = blogPosts.filter((post) => !post.featured);
 
   return (
     <section className="bg-card/50 py-12 md:py-16">
@@ -19,8 +19,8 @@ const PreviousPosts = () => {
             <BlogCard 
               key={post.id} 
               id={post.id}
-              title={post.title[language]}
-              excerpt={post.excerpt[language]}
+              title={post.title}
+              excerpt={post.excerpt}
               coverImage={post.coverImage}
               author={post.author}
               date={post.date}

@@ -10,6 +10,7 @@ export interface BlogPost {
   tags: string[];
   readingTime: number;
   content: string;
+  featured: boolean;
 }
 
 // Import all markdown files from the posts directory
@@ -28,6 +29,7 @@ export const blogPosts: BlogPost[] = Object.values(postModules).map((rawContent)
     tags: data.tags,
     readingTime: data.readingTime,
     content: content,
+    featured: data.featured,
   };
 });
 
