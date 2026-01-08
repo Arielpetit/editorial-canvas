@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -11,7 +12,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="max-w-xl">
-            <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
               {t("heroGreeting")}
               <br />
               <span className="text-gradient">{t("heroTitle")}</span>
@@ -19,12 +20,14 @@ const HeroSection = () => {
             <p className="mt-6 text-lg text-muted-foreground">
               {t("heroDescription")}
             </p>
-            <Button variant="ghost" className="mt-8 gap-2 text-foreground hover:text-primary">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                <Play className="h-3 w-3" />
-              </span>
-              {t("heroCta")}
-            </Button>
+            <Link to="/blog">
+              <Button variant="ghost" className="mt-8 gap-2 text-foreground hover:text-primary">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                  <Play className="h-3 w-3" />
+                </span>
+                {t("heroCta")}
+              </Button>
+            </Link>
           </div>
 
           <div className="relative flex justify-center lg:justify-end">

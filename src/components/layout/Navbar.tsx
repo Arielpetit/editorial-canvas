@@ -27,17 +27,11 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
         <nav className="container mx-auto flex h-16 items-center justify-between px-4">
           {/* Logo */}
           <Link to="/" className="text-xl font-bold tracking-tight">
-            Atega
+            My Blog
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">
-            <Link
-              to="/about"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {t("about")}
-            </Link>
             <Link
               to="/contact"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
@@ -45,28 +39,11 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
               {t("contact")}
             </Link>
             <Link
-              to="/elements"
+              to="/blog"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              {t("elements")}
+              {t("blog")}
             </Link>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-                {t("pages")}
-                <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start">
-                <DropdownMenuItem asChild>
-                  <Link to="/">{t("blog")}</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/gallery">{t("gallery")}</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/archive">{t("archive")}</Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
           </div>
 
           {/* Right side actions */}
@@ -142,13 +119,6 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col gap-4">
                 <Link
-                  to="/about"
-                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {t("about")}
-                </Link>
-                <Link
                   to="/contact"
                   className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
@@ -156,25 +126,11 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
                   {t("contact")}
                 </Link>
                 <Link
-                  to="/elements"
-                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {t("elements")}
-                </Link>
-                <Link
-                  to="/"
+                  to="/blog"
                   className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {t("blog")}
-                </Link>
-                <Link
-                  to="/gallery"
-                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {t("gallery")}
                 </Link>
               </div>
             </div>

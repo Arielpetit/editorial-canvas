@@ -15,9 +15,9 @@ export const translations = {
     menu: "Menu",
     
     // Hero
-    heroGreeting: "Hi, I'm Victoria Nayda.",
-    heroTitle: "Designer, Illustrator",
-    heroDescription: "I craft beautiful digital experiences with a focus on clean design and thoughtful interactions. Welcome to my creative corner where I share my thoughts on design, lifestyle, and everything in between.",
+    heroGreeting: "Hi, I’m Tchikaya Ariel.",
+    heroTitle: "Full-Stack Software Engineer | Open-Source Contributor",
+    heroDescription: "I enjoy building things, learning along the way, and sharing thoughts from my journey. This space is where I write about ideas, experiences, and lessons that shape how I grow and create.",
     heroCta: "Explore Posts",
     
     // Sections
@@ -54,6 +54,11 @@ export const translations = {
     language: "Language",
     english: "English",
     french: "French",
+    filterByTopic: "Filter by topic",
+    allTopics: "All Topics",
+    sortByDate: "Sort by date",
+    newest: "Newest",
+    oldest: "Oldest",
   },
   fr: {
     // Navbar
@@ -69,9 +74,9 @@ export const translations = {
     menu: "Menu",
     
     // Hero
-    heroGreeting: "Bonjour, je suis Victoria Nayda.",
-    heroTitle: "Designer, Illustratrice",
-    heroDescription: "Je crée de belles expériences numériques avec un accent sur le design épuré et les interactions réfléchies. Bienvenue dans mon coin créatif où je partage mes réflexions sur le design, le style de vie et tout le reste.",
+    heroGreeting: "Hi, I’m Tchikaya Ariel.",
+    heroTitle: "Full-Stack Software Engineer | Open-Source Contributor",
+    heroDescription: "I enjoy building things, learning along the way, and sharing thoughts from my journey. This space is where I write about ideas, experiences, and lessons that shape how I grow and create.",
     heroCta: "Explorer les Articles",
     
     // Sections
@@ -108,6 +113,11 @@ export const translations = {
     language: "Langue",
     english: "Anglais",
     french: "Français",
+    filterByTopic: "Filtrer par sujet",
+    allTopics: "Tous les sujets",
+    sortByDate: "Trier par date",
+    newest: "Le plus récent",
+    oldest: "Le plus ancien",
   },
 };
 
