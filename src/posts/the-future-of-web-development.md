@@ -2,8 +2,9 @@
 id: "the-future-of-web-development"
 title: "The Future of Web Development: Trends to Watch"
 date: "2024-07-25"
-author: "Alex Chen"
-cover: "/src/assets/future.png"
+author: "Tchikaya Ariel"
+cover: "/images/future.png"
+readingTime: 3
 tags: ["Web Development", "JavaScript", "Trends"]
 featured: true
 excerpt: "A look at the emerging technologies and methodologies that are shaping the future of web development, from serverless architecture to WebAssembly."

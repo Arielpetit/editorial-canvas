@@ -2,8 +2,9 @@
 id: "cybersecurity-in-2024"
 title: "Cybersecurity in 2024: Staying Safe in a Digital World"
 date: "2024-07-28"
-author: "Alex Chen"
-cover: "/src/assets/cybersercurity.jpeg"
+author: "Tchikaya Ariel"
+cover: "/images/cybersercurity.jpeg"
+readingTime: 3
 tags: ["Cybersecurity", "Privacy", "Security"]
 featured: false
 excerpt: "A guide to the most pressing cybersecurity threats of 2024 and the best practices for protecting your digital life."

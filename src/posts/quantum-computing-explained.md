@@ -2,8 +2,9 @@
 id: "quantum-computing-explained"
 title: "Quantum Computing Explained: The Next Technological Leap"
 date: "2024-07-24"
-author: "Alex Chen"
-cover: "/src/assets/quantum.jpg"
+author: "Tchikaya Ariel"
+cover: "/images/quantum.jpg"
+readingTime: 4
 tags: ["Quantum Computing", "Physics", "Tech"]
 featured: true
 excerpt: "An introduction to the mind-bending world of quantum computing and its potential to solve problems currently intractable for classical computers."

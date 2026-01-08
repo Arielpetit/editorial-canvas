@@ -2,8 +2,9 @@
 id: "the-internet-of-things"
 title: "The Internet of Things (IoT): A Connected World"
 date: "2024-07-27"
-author: "Alex Chen"
-cover: "/src/assets/IoT-internet-of-things.jpg"
+author: "Tchikaya Ariel"
+cover: "/images/IoT-internet-of-things.jpg"
+readingTime: 3
 tags: ["IoT", "Smart Devices", "Connectivity"]
 featured: false
 excerpt: "An overview of the Internet of Things and how it's creating a network of interconnected devices that are making our lives smarter and more efficient."

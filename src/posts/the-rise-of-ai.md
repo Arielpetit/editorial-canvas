@@ -2,8 +2,9 @@
 id: "the-rise-of-ai"
 title: "The Rise of AI: How Machine Learning is Changing Our World"
 date: "2024-07-23"
-author: "Alex Chen"
-cover: "/src/assets/ai.jpg"
+author: "Tchikaya Ariel"
+cover: "/images/ai.jpg"
+readingTime: 3
 tags: ["AI", "Machine Learning", "Tech"]
 featured: true
 excerpt: "A deep dive into the world of Artificial Intelligence and its impact on various industries, from healthcare to finance."

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroPortrait from "@/assets/ariel.png";
+import heroPortrait from "/images/ariel.png";
 
 const HeroSection = () => {
   return (

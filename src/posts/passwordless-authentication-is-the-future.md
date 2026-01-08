@@ -2,8 +2,9 @@
 id: "passwordless-authentication-is-the-future"
 title: "Passwordless Authentication: The Future of Digital Security"
 date: "2024-07-22"
-author: "Alex Chen"
-cover: "/src/assets/passwordless.jpeg"
+author: "Tchikaya Ariel"
+readingTime: 5
+cover: "/images/passwordless.jpeg"
 tags: ["security", "tech", "future"]
 featured: true
 ---

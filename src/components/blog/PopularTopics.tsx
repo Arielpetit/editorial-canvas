@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import blogAI from "@/assets/ai.jpg";
-import blogQuantum from "@/assets/quantum.jpg";
-import blogWebDev from "@/assets/future.png";
-import blogBlockchain from "@/assets/blockchain.jpg";
-import blogIoT from "@/assets/IoT-internet-of-things.jpg";
-import blogSecurity from "@/assets/cybersercurity.jpeg";
+import blogAI from "/images/ai.jpg";
+import blogQuantum from "/images/quantum.jpg";
+import blogWebDev from "/images/future.png";
+import blogBlockchain from "/images/blockchain.jpg";
+import blogIoT from "/images/IoT-internet-of-things.jpg";
+import blogSecurity from "/images/cybersercurity.jpeg";
 
 const topics = [
   { name: "AI", image: blogAI, slug: "ai" },

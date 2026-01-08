@@ -2,8 +2,9 @@
 id: "blockchain-beyond-cryptocurrency"
 title: "Blockchain Beyond Cryptocurrency"
 date: "2024-07-26"
-author: "Alex Chen"
-cover: "/src/assets/blockchain.jpg"
+author: "Tchikaya Ariel"
+cover: "/images/blockchain.jpg"
+readingTime: 4
 tags: ["Blockchain", "Decentralization", "Tech"]
 featured: false
 excerpt: "Exploring the potential of blockchain technology to revolutionize industries beyond finance, from supply chain management to voting systems."

@@ -3,7 +3,7 @@ id: "the-ethics-of-ai"
 title: "The Ethics of AI: Navigating the Moral Maze"
 date: "2024-07-29"
 author: "Alex Chen"
-cover: "/src/assets/ethics.jpeg"
+cover: "/images/ethics.jpeg"
 tags: ["AI", "Ethics", "Society"]
 featured: false
 excerpt: "A discussion on the ethical challenges posed by the rapid advancement of artificial intelligence, from algorithmic bias to autonomous weapons."
