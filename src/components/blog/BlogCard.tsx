@@ -71,7 +71,7 @@ const BlogCard = ({
 
         {/* Tags */}
         <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
+          {tags && tags.map((tag) => (
             <Badge
               key={tag}
               variant="secondary"

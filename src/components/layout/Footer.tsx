@@ -53,10 +53,9 @@ const Footer = () => {
           <p>
             © 2024{" "}
             <Link to="/" className="text-foreground hover:text-primary">
-              Atega
+              My Blog
             </Link>
-            . All Rights Reserved. Published with{" "}
-            <span className="text-primary">Lovable</span>.
+            . All Rights Reserved.
           </p>
         </div>
 
