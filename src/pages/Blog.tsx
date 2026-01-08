@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/lib/translations";
 import { blogPosts, BlogPost } from "@/lib/blogData";
 import BlogCard from "@/components/blog/BlogCard";
 import { Button } from "@/components/ui/button";
@@ -12,10 +12,10 @@ import {
 import { ChevronDown } from "lucide-react";
 
 const Blog = () => {
-  const { t, language } = useLanguage();
   const [posts, setPosts] = useState<BlogPost[]>(blogPosts);
   const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
 
+  const t = translations["en"];
   const allTags = [...new Set(blogPosts.flatMap((post) => post.tags))];
 
   const filterByTag = (tag: string) => {
@@ -39,18 +39,18 @@ const Blog = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold tracking-tight mb-8">{t("blog")}</h1>
+      <h1 className="text-4xl font-bold tracking-tight mb-8">{t.blog}</h1>
 
       <div className="flex flex-col sm:flex-row gap-4 mb-8">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="w-full sm:w-auto justify-between">
-              <span>{t("filterByTopic")}</span> <ChevronDown className="h-4 w-4" />
+              <span>{t.filterByTopic}</span> <ChevronDown className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-full sm:w-56">
             <DropdownMenuItem onClick={() => filterByTag("all")}>
-              {t("allTopics")}
+              {t.allTopics}
             </DropdownMenuItem>
             {allTags.map((tag) => (
               <DropdownMenuItem key={tag} onClick={() => filterByTag(tag)}>
@@ -63,15 +63,15 @@ const Blog = () => {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="w-full sm:w-auto justify-between">
-              <span>{t("sortByDate")}</span> <ChevronDown className="h-4 w-4" />
+              <span>{t.sortByDate}</span> <ChevronDown className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-full sm:w-56">
             <DropdownMenuItem onClick={() => sortPosts("newest")}>
-              {t("newest")}
+              {t.newest}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => sortPosts("oldest")}>
-              {t("oldest")}
+              {t.oldest}
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -82,8 +82,8 @@ const Blog = () => {
           <BlogCard
             key={post.id}
             id={post.id}
-            title={post.title[language]}
-            excerpt={post.excerpt[language]}
+            title={post.title}
+            excerpt={post.excerpt}
             coverImage={post.coverImage}
             author={post.author}
             date={post.date}
